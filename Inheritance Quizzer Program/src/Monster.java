@@ -1,16 +1,19 @@
 
 public class Monster
 {
-	public Monster()
-		{
-			
-		}
+	
 	public void runMonster1()
 	{
-		System.out.println("The monster attacks the villages");
+		int number = 1;
+		String name = "runMonster1";
+		System.out.println(name);
+		System.out.println("This is the monster 1 method");
 	}
 	public void runMonster2()
 	{
-		System.out.println("This monster eats children");
+		int number = 2;
+		String name = "runMonster2";
+		System.out.println(name);
+		System.out.println("This is the monster 2 method");
 	}
 }
