@@ -16,17 +16,25 @@ public class MonsterRunner
 			boolean stillPlaying=true;
 			while(stillPlaying)					
 				{	
-					if(counter==numberOfTimes)
+					if(counter!=numberOfTimes)
 						{
-							stillPlaying=false;
-							System.exit(1);
-						}
-					else
-						{								
 							stillPlaying= true;
 							Dragon x = new Dragon();
 							x.printOneMethod();
 							x.printOnePossibility();
+							System.out.println("If this code runs what will happen");
+							x.runMonster1();
+							x.runMonster2();
+							x.runDragon1();
+							x.runDragon2();
+							System.out.println("It wont work.");
+						}
+					else
+						{		
+						stillPlaying=false;
+						System.out.println("game over");
+						System.exit(1);
+						
 						}
 					counter++;
 				}

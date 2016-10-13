@@ -4,16 +4,23 @@ public class Dragon extends Monster
 		int number = 0;
 		public void runDragon1()
 			{
-				int number = 3;
-				String name = "runDragon1()";
 				System.out.println("This is the Dragon 1 method");
+			}
+			public void runDragon1name()
+			{
+				String name = "runDragon1()";
+				System.out.println(name);
 			}
 			public void runDragon2()
 			{
-				int number = 4;
-				String name = "runDragon2()";
 				System.out.println("This is the Dragon 2 method");
 			}
+			public void runDragon2name()
+			{
+				String name = "runDragon2()";
+				System.out.println(name);
+			}
+			
 			@Override
 			public void runMonster2()
 				{
@@ -24,40 +31,40 @@ public class Dragon extends Monster
 				int random=(int)(Math.random()*4);
 				if(random== 1)
 					{
-						runDragon1();
+						runDragon1name();
 					}
 				if(random== 2)
 					{
-						runDragon2();
+						runDragon2name();
 					}
 				if(random== 3)
 					{
-						runMonster1();
+						runMonster1name();
 					}
 				if(random== 4)
 					{
-						runMonster2();
+						runMonster2name();
 					}
 			}
 			public void printOnePossibility()
 			{
-				int random2=(int)(Math.random()*4);
-				if(random2== 1)
+				int randomNumber=(int)(Math.random()*4);
+				if(randomNumber== 1)
 					{
 						System.out.println("Monster x = new Monster();");
 					}
-				if(random2== 2)
+				if(randomNumber== 2)
 					{
 						System.out.println("Monster x = new Dragon();");
 					}
-				if(random2== 3)
+				if(randomNumber== 3)
 					{
 						System.out.println("Dragon x = new Monster();");
 					}
-				if(random2== 4)
+				if(randomNumber== 4)
 					{
 						System.out.println("Dragon x = new Dragon();");
 					}
 			}
-			}
+		}
 	
